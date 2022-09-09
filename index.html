@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Web Apps by Yanuar Sabikhi</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Bookshelf Web App</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="konten">
+            <div>
+                <h2 class="sub">Masukkan Buku Baru</h2>
+                <form id="inputBuku" name="tambahBuku">
+                <div class="tambah">
+                    <span for="judul">Judul</span>
+                    <input type="text" name="judul" id="judul" required="required" placeholder="Masukkan Judul">
+                </div> 
+            <div>
+                <div class="tambah">
+                    <span for="penulis">Penulis</span>
+                    <input type="text" name="penulis" id="penulis" required="required" placeholder="Masukkan Penulis">
+                </div> 
+                <div class="tambah">
+                    <span for="tahun">Tahun</span>
+                    <input type="number" name="tahun" id="tahun" required="required" placeholder="Masukkan Tahun">
+                    </div> 
+            </div>
+                <div class="check">
+                    <input type="checkbox" name="isReaded" id="isReaded" >
+                    <label for="isReaded">Tandai selesai dibaca</label>
+                </div>
+                <button type="submit" class="submitButton">Submit Data</button>
+                </form>
+            </div>
+            </div>
+        </div>
+
+        <!--Tombol Pencarian-->
+        <section id="searchSection">
+        <div class="container">
+            <div class="konten">
+                <h2 class="sub">Cari Buku</h2>
+                <form id="cariBuku">
+                <div class="tambah">
+                    <span for="cariJudul">Judul Buku</span>
+                    <input type="text" name="cariJudul" id="cariJudul" placeholder="Masukkan Judul Buku">
+                </div>
+                <div class="titleSearchButton">
+                    <button type="submit" class="searchButton">Cari</button>
+                </div>
+                </form>
+            </div>
+        </div>
+        </section>
+
+    <section class="container">
+        <div class="konten">
+            <h2 class="sub"> Belum selesai dibaca</h2>
+            <div id="belumSelesai_list">
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="konten">
+            <h2 class="sub"> Selesai dibaca</h2>
+            <div id="selesai_list">
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <script src="styles/script.js"></script>
+</body>
+</html>

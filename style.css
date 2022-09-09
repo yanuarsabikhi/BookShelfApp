@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    background-color:ghostwhite;
+}
+
+.header{
+    background-color: rgb(24, 0, 245);
+    padding: 14px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.container{
+    margin:15px;
+    width: min(100% - 45px, 750px);
+    margin-inline: auto;
+    flex-direction: column;
+    display: flex;
+}
+
+.konten{
+    padding:25px;
+    box-shadow: 0 4px 8px rgba(23, 49, 105, 0.15);;
+    background-color: white;
+    border-radius: 10px;
+    width:100%;
+}
+
+.tambah{
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    width: 100%;
+}
+
+.tambah input{
+    padding: 10px;
+    border: 2px solid rgb(24, 0, 245);
+    border-radius: 5px;
+    outline: none;
+    font-size: 13px;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.tambah span{
+    color: white;
+    font-size: 10px;
+    padding: 0 10px;
+    background-color: rgb(24, 0, 245);
+    border-radius: 5px;
+    letter-spacing: 0.1em;
+}
+
+
+
+.sub{
+    font-size: 16px;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.check label {
+    color: black;
+    font-size: 13px;
+}
+
+.check label:hover{
+  color: red;
+}
+
+.check label,
+.check input {
+    cursor: pointer;
+}
+
+.submitButton,
+.searchButton {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    background-color:rgb(24, 0, 245);
+    margin-top: 10px;
+    color: white;
+    font-family: 'Montserrat';
+    border: 0;
+    padding:7px;
+    cursor: pointer;
+}
+
+.submitButton:hover,
+.searchButton:hover {
+    background-color: rgb(28, 13, 167);
+}
+
+.pindahHijau{
+    font-family: 'Montserrat';
+    background-color: limegreen;
+    color : white;
+    padding : 5px;
+    border: 0;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding : 5px 15px 5px 15px;
+    margin-bottom: 5px;
+}
+
+.pindahHijau:hover{
+    background-color: rgb(53, 138, 53);
+}
+
+.pindahOrange{
+    font-family: 'Montserrat';
+    background-color: orange;
+    color : white;
+    padding : 5px;
+    border: 0;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding : 5px 10px 5px 10px;
+}
+
+.pindahOrange:hover{
+    background-color: rgb(204, 133, 0);
+}
+
+.hapusBuku{
+    font-family: 'Montserrat';
+    background-color: red;
+    color : white;
+    padding : 5px 10px 5px 10px;
+    border: 0;
+    border-radius: 5px;
+    margin-right: 7px;
+}
+
+.hapusBuku:hover{
+    background-color: rgb(200, 3, 3);
+}
+
+.book_item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#belumSelesai_list h4,
+#selesai_list h4{
+    margin-bottom: 3px;
+}
+
+#belumSelesai_list p,
+#selesai_list p{
+    margin-bottom: 5px;
+}
+
+#belumSelesai_list article,
+#selesai_list article{
+    padding: 10px;
+    border: 2px solid rgb(24, 0, 245);
+    border-radius: 5px;
+    outline: none;
+    font-size: 13px;
+    transition: 0.5s;
+    width: 100%;
+}
